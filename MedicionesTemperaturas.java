@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 /**
  * Registros de temperaturas diarios de una estacion meteorológica
+ * autor: priscila 
  */
 public class MedicionesTemperaturas
 {
