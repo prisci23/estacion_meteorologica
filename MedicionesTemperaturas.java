@@ -47,6 +47,16 @@ public class MedicionesTemperaturas
      * Muestra todas las temperaturas registradas en 
      * la pantalla. 
      */
+    public void cantTemperaturasExtremas(){
+        System.out.println(dia + "/" + mes);
+        int ext = 0;
+        for (Integer temperatura: registros) {
+            if ( temperatura > 35 || temperatura > -15);
+            System.out.print(ext + ": ");
+            System.out.println(temperatura + "C");
+            ext = ext + 1;
+        }
+    }
     public void imprimirTemperaturas() {
         System.out.println(dia + "/" + mes);
         int pos = 0;
