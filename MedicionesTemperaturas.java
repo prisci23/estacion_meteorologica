@@ -51,10 +51,11 @@ public class MedicionesTemperaturas
         System.out.println(dia + "/" + mes);
         int ext = 0;
         for (Integer temperatura: registros) {
-            if ( temperatura > 35 || temperatura > -15);
-            System.out.print(ext + ": ");
-            System.out.println(temperatura + "C");
-            ext = ext + 1;
+              if ( temperatura > 35 || temperatura  < -15){
+              System.out.print(ext + ": ");
+              System.out.println(temperatura + "C");
+              ext = ext + 1;
+            }
         }
     }
     public void imprimirTemperaturas() {
