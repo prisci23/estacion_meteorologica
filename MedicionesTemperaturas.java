@@ -58,6 +58,32 @@ public class MedicionesTemperaturas
             }
         }
     }
+     public int promedioTemp(){
+        int prom = 0;
+        for (Integer temperatura: registros) {
+            temperatura += temperatura ;
+           
+        }
+        return prom / registros.size();
+    }
+    public int maxTemperatura(){
+        int maxtem = registros.get(0);
+        for (Integer temperatura: registros) {
+            if (temperatura > maxtem) {
+                maxtem = temperatura;
+            }
+        }
+        return maxtem;
+    }
+     public int minTemperatura(){
+        int mintem = registros.get(0);
+        for (Integer temperatura: registros) {
+            if (temperatura < mintem) {
+                mintem = temperatura;
+            }
+        }
+        return mintem;
+    }
     public void imprimirTemperaturas() {
         System.out.println(dia + "/" + mes);
         int pos = 0;
